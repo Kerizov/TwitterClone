@@ -1,5 +1,10 @@
 <template>
-  <div>
-    <NuxtWelcome />
+  <div :class="{'dark': darkMode}">
+    <div class="bg-white dark:bg-dim-900">
+
+    </div>
   </div>
 </template>
+<script setup>
+const darkMode = ref(true);
+</script>
