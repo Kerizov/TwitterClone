@@ -9,11 +9,11 @@
           </div>
         </div>
         <!--     Main sidebar  -->
-<!--        <main class="col-span-12 md:col-span-8 xl:col-span-6">-->
-<!--          <p>main</p>-->
-<!--        </main>-->
-        <!--     Right sidebar  -->
-        <div class=" hidden col-span-12 md:block xl:col-span-4 md:col-span-3">
+        <main class="col-span-12 md:col-span-8 xl:col-span-6">
+          <router-view/>
+        </main>
+<!--             Right sidebar-->
+        <div class="hidden md:block xl:col-span-4 md:col-span-3">
           <div class="sticky top-0">
             <SidebarRight/>
           </div>
@@ -23,5 +23,5 @@
   </div>
 </template>
 <script setup>
-const darkMode = ref(true);
+const darkMode = ref(false);
 </script>
