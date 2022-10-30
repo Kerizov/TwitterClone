@@ -23,7 +23,7 @@ export default defineEventHandler(async(event) => {
     if(!user){
         return sendError(event, createError({
             statusCode: 400,
-            statusMessage: 'User or password is invalid'
+            statusMessage: 'Username or password is invalid'
         }))
     }
 
@@ -33,7 +33,7 @@ export default defineEventHandler(async(event) => {
     if(!doesThePasswordMatch){
         return sendError(event, createError({
             statusCode: 400,
-            statusMessage: 'User or password is invalid'
+            statusMessage: 'Username or password is invalid'
         }))
     }
 
